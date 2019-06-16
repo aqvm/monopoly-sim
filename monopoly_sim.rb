@@ -1,18 +1,3 @@
-=begin
-This is a (fairly) basic monopoly simulator, built with the purpose of finding the most landed on spaces. Intuitively, all spaces should
-be about as frequent, which is the assumption that all other analyses I have found online have worked from. However, this is not the case,
-since the most common outcome of rolling two dice is a 7.
-Since we are not concerned with money, or even with multiple players, this simulator simply plays a "game" of 250 dice rolls, keeping
-track of the most frequently landed on spaces in each game. It then plays through 500_000 of these "games" and keeps a count of the most
-popular space in each one, outputting the results.
-Of note, this simulator does implement the logic of the community chest and chance cards that move the player, as well as the go to jail
-space, and the rolling-three-doubles-in-a-row landing you in jail rule. However, since the number of turns it takes to escape jail does
-not matter for our purposes, and since money doesn't either, this simulator does not implement any details related to either of those.
-=end
-
-
-
-
 SPACENAMEARRAY = [:go, :mediterranean, :c_c_1, :baltic, :income_tax, :reading_rr, :oriental, :chance_1, :vermont, :connecticut, :jail,
 	:st_charles_place, :electric_company, :states, :virginia, :pennsylvania_rr, :st_james_place, :c_c_2, :tenessee, :new_york,
 	:free_parking, :kentucky, :chance_2, :indiana, :illinois, :b_and_o_rr, :atlantic, :ventnor, :water_works, :marvin_gardens,
